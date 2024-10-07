@@ -2,6 +2,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Create from './components/Create'
 import Home from './components/Home'
+import Update from './components/Update'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />}></Route>
       <Route path='/create' element={<Create />}></Route>
+      <Route path='/update/:id' element={<Update />}></Route>
     </Routes>
    </BrowserRouter>
   )

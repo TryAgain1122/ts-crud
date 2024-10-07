@@ -7,7 +7,7 @@ export const allUsers = async (req: Request, res: Response): Promise<void> => {
         const users = await User.find();
 
         if (!users) {
-            res.status(404).json({message: "No Data"})
+            res.status(404).json({message: "No Data"});
         }
 
         res.status(200).json(users)
